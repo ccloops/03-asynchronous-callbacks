@@ -1,8 +1,8 @@
 'use strict';
 
 const textReader = require('../lib/reader');
-
 const paths = [`${__dirname}/../assets/cat.txt`, `${__dirname}/../assets/elephant.txt`,`${__dirname}/../assets/seal.txt`];
+const invalidPaths = [`${__dirname}/../assets/cat`, `${__dirname}/../assets/elephant`,`${__dirname}/../assets/seal`];
 
 describe('reader.test.js', () => {
 
@@ -16,5 +16,13 @@ describe('reader.test.js', () => {
           done();
         });
       });
+  });
+
+  describe('testing to see that incorrect file paths throw an error', () => {
+    test('throw an error if invalid file path', () => {
+      textReader.readText(invalidPaths, (error) => {
+        expect(error).not.toBeNull();
+      });
+    });
   });
 });

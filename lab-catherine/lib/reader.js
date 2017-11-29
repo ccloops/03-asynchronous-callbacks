@@ -2,7 +2,6 @@
 
 const textReader = module.exports = {};
 const fs = require('fs');
-
 const fileTextArray = [];
 
 textReader.readText = (paths, callback) => {
