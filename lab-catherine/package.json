@@ -1,0 +1,35 @@
+{
+  "name": "lab-catherine",
+  "version": "1.0.0",
+  "description": "code-401-lab3-parallel-file-processing",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest -i --coverage",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccloops/03-asynchronous-callbacks.git"
+  },
+  "keywords": [
+    "node",
+    "async",
+    "testing"
+  ],
+  "author": "Catherine Looper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccloops/03-asynchronous-callbacks/issues"
+  },
+  "homepage": "https://github.com/ccloops/03-asynchronous-callbacks#readme",
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "jest": "^21.2.1"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
