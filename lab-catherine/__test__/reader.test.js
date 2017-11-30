@@ -19,6 +19,7 @@ describe('reader.test.js', () => {
   });
 
   describe('testing to see that incorrect file paths throw an error', () => {
+      
     test('throw an error if invalid file path', () => {
       textReader.readText(invalidPaths, (error) => {
         expect(error).not.toBeNull();
